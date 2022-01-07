@@ -13,9 +13,9 @@ canvas {
 #particles-container {
     position: fixed;
     top: 0%;
+    margin-left: 0px;
+    margin-right: 0px;
     bottom: 0%;
-    left: 0%;
-    right: 0%;
 }
   /* Image by Patrick Fore on Unsplash */
 
