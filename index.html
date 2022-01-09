@@ -3,52 +3,65 @@
 
 <head>
     <!-- Scripts e links -->
-    <title>Coded</title>
+    <title>Claudio A.</title>
     <div id="particles-container"></div>
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-
+    <link href='https://css.gg/spinner-alt.css' rel='stylesheet'>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="media/favicon.ico">
-    <script type="text/javascript" src="scripts/main.js"></script>
-    <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" src="script/main.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/b43d653dfa.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://css.gg/dark-mode.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
-<body>
+<body id="body" onload="myFunction()">
 
-    <tanga class="fade-in-bottom">
+    <i id="loader" class="gg-spinner-alt"></i>
+    <button id="hamburger-icon" class="btn fas fa-bars" onclick="hamburger()"></button>
+    <menu id="menu">
+        <h2 id="menu-txt" class="hidden">working...</h2>
+    </menu>
+    <gg style="display:none;" id="mostrar">
+        <button id="moon-icon" class="fas fa-moon" onclick="change()"></button>
+
+        <tanga class="fade-in-bottom">
         <figure class="circle "></figure>
-    </tanga>
-    <h1 class="main focus-in-contract-bck">CLAUDIO A.</h1>
-    
-
-    <div class="sub fade-in-top">
-        <h1 class="subx">LET'S GO</h1> TO SEE MY <b>WORK</b>.
-    </div>
-    <hr class="dashed">
-    <figure class="square"></figure>
-    <div class="classic">
-        <h1 class="classicb">ABOUT</h1> ME<h1 class="about">My name is Cláudio A. I have been working for around 4 years
-            with web and graphic development. Today I take care of the <a href="https://vuxdev.com.br/"
-                target="_blank"></a>
+        </tanga>
+            <h1 id="text-main" class="main focus-in-contract-bck">CLAUDIO A.</h1>
+            <div id="text-sub" class="sub fade-in-top">
+                <h1 id="text-sub-x" class="subx">LET'S GO</h1> TO SEE MY <b>WORK</b>.
+            </div>
+            <hr id="linea" class="dashed">
+            <figure id="square" class="square"></figure>
+            <div class="classic" id="dark">
+                <h1 id="white" class="classicb">ABOUT</h1> ME<h1 class="about" id="whitex">My name is Cláudio A. I have been working for around 4 years
+                with web and graphic development. Today I take care of the <a href="https://vuxdev.com.br/"
+                    target="_blank">
             <div class="reference"><a href="https://vuxdev.com.br/" target="_blank">Vux Dev</a> <i class="feather"
-                    data-feather="external-link"></i></a></div>with other team members.<br>I currently know python, html, css, gml, sk and some javascript.</br>
-        </h1>
-    </div>
-    <hr class="line">
-    <figure class="triangle"></figure>
-    <div class="classicx">
-        <h1 class="classicc">CONTACT ME</h1><i class="feather" data-feather="circle"></i>
-    </div>  
-
-    <h1 class="space">a</h1>
-
-
+            data-feather="external-link"></i></a></div>with other team members.
+            </h1>
+        </div>
+        <hr class="line">
+        <content class="space">
+            <i id="py" class="fab fa-python"></i>
+            <i id="html" class="fab fa-html5"></i>
+            <i id="css" class="fab fa-css3-alt"></i>
+            <i id="js" class="fab fa-js"></i>
+        </content>
+        <footer >
+            <a onselectstart="return false" href="https://github.com/codedca" target="_blank"><i  id="git" class="fab fa-github"></i></a>
+            <a onselectstart="return false" href="https://twitter.com/codedca" target="_blank"><i id="twi" class="fab fa-twitter"></i></a>
+            <a onselectstart="return false" href="https://instagram.com/claudio.cdd" target="_blank"><i id="inst" class="fab fa-instagram"></i></a>
+            <a onselectstart="return false" href="mailto:claudioalvesoficial@gmail.com" target="_blank"><i id="env" class="fas fa-envelope"></i></a>
+        </footer>
+    </gg>
 </body>
 
 <script>
