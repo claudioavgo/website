@@ -1,71 +1,128 @@
 <!DOCTYPE html>
-<html>
-
 <head>
-    <!-- Scripts e links -->
-    <title>Claudio A.</title>
-    <div id="particles-container"></div>
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <link href='https://css.gg/spinner-alt.css' rel='stylesheet'>
-    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/x-icon" href="media/favicon.ico">
-    <script type="text/javascript" src="script/main.js"></script>
-    <link rel="stylesheet" href="css/main.css">
-    <script src="https://kit.fontawesome.com/b43d653dfa.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/animation.css">
+    <link rel="stylesheet" href="styles/addons.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href='https://css.gg/dark-mode.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://css.gg/spinner-alt.css'>
+    <script src="https://kit.fontawesome.com/b43d653dfa.js" crossorigin="anonymous"></script>
+    <script src="scripts/main.js" type="text/javascript"></script>
+
+    <!-- Título da página -->
+    <title>Claudio A.</title>
 </head>
 
-<body id="body" onload="myFunction()">
-
-    <i id="loader" class="gg-spinner-alt"></i>
-    <button id="hamburger-icon" class="btn fas fa-bars" onclick="hamburger()"></button>
-    <menu id="menu">
-        <h2 id="menu-txt" class="hidden">working...</h2>
-    </menu>
-    <gg style="display:none;" id="mostrar">
-        <button id="moon-icon" class="fas fa-moon" onclick="change()"></button>
-
-        <tanga class="fade-in-bottom">
-        <figure class="circle "></figure>
-        </tanga>
-            <h1 id="text-main" class="main focus-in-contract-bck">CLAUDIO A.</h1>
-            <div id="text-sub" class="sub fade-in-top">
-                <h1 id="text-sub-x" class="subx">LET'S GO</h1> TO SEE MY <b>WORK</b>.
-            </div>
-            <hr id="linea" class="dashed">
-            <figure id="square" class="square"></figure>
-            <div class="classic" id="dark">
-                <h1 id="white" class="classicb">ABOUT</h1> ME<h1 class="about" id="whitex">My name is Cláudio A. I have been working for around 4 years
-                with web and graphic development. Today I take care of the <a href="https://vuxdev.com.br/"
-                    target="_blank">
-            <div class="reference"><a href="https://vuxdev.com.br/" target="_blank">Vux Dev</a> <i class="feather"
-            data-feather="external-link"></i></a></div>with other team members.
-            </h1>
+<body id="body" onload="loader()">
+    
+<loading id="loading-clear" class="loading">
+    <i id="loader" class="gg-spinner"></i>
+</loading>
+    <!-- Header -->
+<loader id="loading" style="display:none;">
+    <div class="header">
+        
+        <div class="menu">
+            <button id="dark-mode-btn" onclick="darkmode()" class="btn-menu-darkmode fas fa-moon"></button>
+            <button class="btn-menu-hamburger fas fa-bars"></button>
         </div>
-        <hr class="line">
-        <content class="space">
-            <i id="py" class="fab fa-python"></i>
-            <i id="html" class="fab fa-html5"></i>
-            <i id="css" class="fab fa-css3-alt"></i>
-            <i id="js" class="fab fa-js"></i>
-        </content>
-        <footer >
-            <a onselectstart="return false" href="https://github.com/codedca" target="_blank"><i  id="git" class="fab fa-github"></i></a>
-            <a onselectstart="return false" href="https://twitter.com/codedca" target="_blank"><i id="twi" class="fab fa-twitter"></i></a>
-            <a onselectstart="return false" href="https://instagram.com/claudio.cdd" target="_blank"><i id="inst" class="fab fa-instagram"></i></a>
-            <a onselectstart="return false" href="mailto:claudioalvesoficial@gmail.com" target="_blank"><i id="env" class="fas fa-envelope"></i></a>
-        </footer>
-    </gg>
+        <div class="apresentation">
+            <div class="apresentation-box-text">
+                <h4 class="pre-apresentation-text">Hi, my name is</h4>
+                <figure class="blob-main"></figure>
+                <h1 class="apresentation-text"><span class="s-letter">C</span><span class="s-letter">L</span><span class="s-letter">A</span><span class="s-letter">U</span><span class="s-letter">D</span><span class="s-letter">I</span><span class="s-letter">O </span><span class="s-letter">A</span><span class="s-letter">.</span></h1>
+                <h3 class="pre-apresentation-sub-text">I'm a web developer and pre-college student, I bring my eternal dedication and creativity to my projects.</h3>
+                <h3 class="apresentation-sub-text"><span class="apresentation-sub-text-special">Let's go</span> to know me more.</h3>
+            </div>
+            <div class="apresentation-box-obj">
+                <figure class="apresentation-obj"></figure>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+
+    <!-- Separador -->
+
+    <div class="separator-mid">
+        <figure class="line-mid"></figure>
+    </div>
+
+    <!-- Separador -->
+
+    <!-- Mid -->
+    <div class="mid">
+        <div class="mid-box">
+            <div class="mid-box-txt-main">
+                <figure class="mid-obj"></figure>
+                <h1 class="mid-text"><span class="apresentation-sub-text-special mid-text-special">ABOUT</span> ME</h1>
+            </div>
+            
+            <div class="mid-box-item">
+                <figure class="mid-item"></figure>
+                <h3 class="mid-sub-txt">I have been working for around 3 years with web and graphic development. Today I take care of the <a href="http://vuxdev.com.br" target="_blank" rel="noreferrer noopener"><span class="mid-sub-txt-reference">Vux Dev<i class="fas fa-external-link-alt"></i></span></a> with other team members.</h3>
+            </div>
+            <div class="mid-section">
+                <div class="mid-section-box-main-text">
+                    <h1 class="mid-section-box-one-text">My projects.</h1>
+                </div>
+                <div class="mid-section-box-two">
+                    <a href="https://github.com/CodedCA/website" target="_blank" rel="noreferrer noopener">
+                    <div class="mid-section-project-one">
+                        <div class="mid-section-po-header">
+                            <figure class="fas fa-folder mid-icon"></figure>
+                            <div class="mid-duo">
+                                <i class="far fa-star mid-icon-refe"></i>
+                                <i class="fas fa-external-link-alt mid-icon-refe"></i>
+                            </div>
+                        </div>
+                        <div class="mid-section-po-mid">
+                            <h1 class="mid-section-po-text">My-Website</h1>
+                            <h3 class="mid-section-po-sub-text">The open source of this website, make good use of it!</h3>
+                        </div>
+                        <div class="mid-section-po-footer">
+                            <h3 class="mid-po-footer-txt">HTML CSS JavaScript</h3>
+                        </div>
+                    </div>
+                    </a>
+                    <a href="https://github.com/CodedCA/Discord-Web-Hook-Sender" target="_blank" rel="noreferrer noopener">
+                    <div class="mid-section-project-two">
+                        <div class="mid-section-pt-header">
+                            <figure class="fas fa-folder mid-icon"></figure>
+                            <div class="mid-duo">
+                                <i class="far fa-star mid-icon-refe"></i>
+                                <i class="fas fa-external-link-alt mid-icon-refe"></i>
+                            </div>
+                        </div>
+                        <div class="mid-section-po-mid">
+                            <h1 class="mid-section-po-text">Discord-Web-Hook-Sender</h1>
+                            <h3 class="mid-section-po-sub-text">A tool to send webhook's to Discord, using the web!</h3>
+                        </div>
+                        <div class="mid-section-po-footer">
+                            <h3 class="mid-po-footer-txt">HTML CSS JavaScript Discord.js</h3>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Mid -->
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer-box-text">
+            <h3 class="footer-text">/Designed and Built by Claudio Alves</h3>
+        </div>
+        <div class="footer-box-icon">
+            <a href="https://github.com/codedca" target="_blank" rel="noreferrer noopener"><i  class="fab fa-github"></i></a>
+            <a href="https://instagram.com/claudio.cdd" target="_blank" rel="noreferrer noopener"><i  class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/codedca" target="_blank" rel="noreferrer noopener"><i  class="fab fa-twitter"></i></a>
+            <a href="mailto:claudioalvesoficial@gmail.com" target="_blank" rel="noreferrer noopener"><i  class="fas fa-envelope"></i></a>
+        </div>
+    </div>
+    <!-- Footer -->
+</loader>
 </body>
-
-<script>
-    feather.replace()
-</script>
-
-</html>
