@@ -1,0 +1,68 @@
+/* Scroll*/
+
+/* width */
+::-webkit-scrollbar {
+    display: flex;
+    width: 3px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #111518;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-gradient);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    opacity: 70%;
+  }
+
+  /* Loader */
+  .gg-spinner {
+    transform: scale(var(--ggs,1))
+}
+
+.loading {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gg-spinner,
+.gg-spinner::after,
+.gg-spinner::before {
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    color: var(--color-dark);
+}
+.gg-spinner::after,
+.gg-spinner::before {
+    content: "";
+    position: absolute;
+    border-radius: 100px;
+    border-radius: 100%;
+}
+.gg-spinner::before {
+    animation: spinner 1s
+    cubic-bezier(.6,0,.4,1) infinite;
+    border: 3px solid transparent;
+    border-top-color: currentColor
+}
+.gg-spinner::after {
+    border: 3px solid;
+    opacity: .2
+}
+
+
+
+
