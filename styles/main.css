@@ -164,6 +164,7 @@ a {
     height: 300px;
     border-radius: 50%;
     background: var(--color-gradient);
+    box-shadow: inset 50px 50px 100px #e3e3e3, inset -50px -50px 100px #ffffff;
 }
 
 .separator-mid {
