@@ -1,0 +1,25 @@
+@keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+  
+    50% {
+      background-position: 100% 50%;
+    }
+  
+    100% {
+        background-position: 0% 50%;
+        
+    }
+}
+
+@keyframes example {
+    0%  {transform: rotate(0deg)}
+    50% {background-color: #FF7B95;}
+    100%  {background-color: var(--color-light); transform: rotate(359deg)}
+  }
+
+  @keyframes spinner {
+    0% { transform: rotate(0deg) }
+    to { transform: rotate(359deg) }
+}
