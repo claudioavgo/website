@@ -2,7 +2,7 @@
     My Website
 </h1>
 <p align="center">
-  Visit in <a href="https://coded.today">coded.today</a>. Builded in HTML, CSS and JS.
+  Visit on <a href="https://coded.today">coded.today</a>. Builded in HTML, CSS and JS.
 </p>
 
 ![demo](./src/website_image.png)
