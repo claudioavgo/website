@@ -1,10 +1,14 @@
-var myVar;
-var r = document.querySelector(':root');
-var actived = 0;
+/*jshint esversion: 6 */
+
+let myVar;
+let r = document.querySelector(':root');
+let actived = 0;
+
 
 
 function loader() {
   myVar = setTimeout(showPage, 600);
+  
 }
 
 function showPage() {

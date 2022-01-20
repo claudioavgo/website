@@ -13,6 +13,10 @@
     --font-spc: 'Manrope', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     box-sizing: border-box;
@@ -107,6 +111,14 @@ a {
 
 .apresentation-box-obj {
     border: 1px solid yellow;
+    border: 2px dashed var(--color-dark) !important;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: spinner 30s infinite;
 }
 
 .pre-apresentation-text-emj {
@@ -163,14 +175,29 @@ a {
 }
 
 .apresentation-obj {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
+    background-origin: content-box;
     background: var(--color-gradient);
+    padding: 10px;
+    
+}
+
+.spx {
+    height: 400px;
+    width: 200px;
+    background-color: white;
+}
+
+.separator-real-mid {
+    
+    height: 250px;
+    width: 200px;
 }
 
 .separator-mid {
-    padding: 250px 65px 100px;
+    padding: 100px 65px 100px;
     border: 1px solid lime;
     display: flex;
     align-items: center;
@@ -206,6 +233,7 @@ a {
 
 .pre-mid-contact-btn:hover {
     cursor: pointer;
+    opacity: 90%;
 }
 
 .line-mid {
@@ -394,6 +422,17 @@ a {
     max-width: 300px;
     /*box-shadow: 0px 4px 11px -3px #000000;*/
     display: block;
+}
+
+.mid-section-project-one:hover {
+    filter: brightness(120%);
+}
+.mid-section-project-two:hover {
+    filter: brightness(120%);
+}
+
+.mid-section-project-three:hover {
+    filter: brightness(120%);
 }
 
 .mid-section-po-header {
